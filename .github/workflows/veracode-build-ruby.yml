@@ -41,7 +41,7 @@ jobs:
       run: |
         source /etc/profile.d/rvm.sh
         rvm pkg install openssl
-        rvm install ruby-3.3.4
+        rvm install ruby-2.7.6
         
         cd veracode-helper/helper/cli
         cliFile=$(ls -1 . | head -n 1)
@@ -51,7 +51,7 @@ jobs:
         #export PATH="veracode-helper/helper/cli/$cliFileName:$PATH"
         cd /__w/veracode/veracode
         
-        gem install bundler -v '2.4.6'
+        gem install bundler -v '2.4.22'
         gem install veracode
         bundle install
         veracode prepare -vD
