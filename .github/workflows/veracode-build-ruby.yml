@@ -41,7 +41,7 @@ jobs:
       run: |
         source /etc/profile.d/rvm.sh
         rvm pkg install openssl
-        rvm install ruby-3.3.0
+        rvm install ruby-3.3.4
         
         cd veracode-helper/helper/cli
         cliFile=$(ls -1 . | head -n 1)
